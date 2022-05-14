@@ -20,8 +20,8 @@ class ModelViewer extends Component {
   componentDidMount() {
     //ADD RENDERER
     this.renderer = new THREE.WebGLRenderer({
-      canvas: document.querySelector("canvas"),
-      // canvas: this.mount,
+      // canvas: document.querySelector("canvas"),
+      canvas: this.canvas_ref,
       antialias: true
     })
     this.renderer.setClearColor(this.props.backgroundColor)
@@ -223,6 +223,9 @@ class ModelViewer extends Component {
         }}
       >
         <canvas
+        ref={ref => {
+          this.canvas_ref = ref
+        }}
         style={{
           width: '100%',
           height:'100%' 
