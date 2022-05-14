@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/haafoo/react-3d-model-viewer.git"
+    "url": "https://github.com/johboe/react-3d-model-viewer.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
